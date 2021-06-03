@@ -1,0 +1,48 @@
+*{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:100vh;
+    background:url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+.logo{
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin:0px;
+    padding:0px;
+    background:url('https://images0.pixlis.com/background-image-checkers-chequered-checkered-squares-seamless-tileable-islamic-green-white-linen-236swe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    animation-name:move;
+    animation-iteration-count:infinite;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+}
+@keyframes move{
+    0%{
+        background-position:100% 80%;
+      }
+      100%{
+        background-position:90% 20%;
+      }
+}
+p{
+    font-size:2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
